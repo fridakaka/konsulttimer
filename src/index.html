@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Konsulttimer</title>
+  <meta name="description" content="Registrera tid per projekt och skapa tidsunderlag till kunden. Data lagras lokalt i din webbläsare.">
+  <meta name="theme-color" content="#0f6b66" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#12171d" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Konsulttimer">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
+  <div class="shell">
+    <header class="topbar no-print"><span class="brand">Konsulttimer</span></header>
+    <main id="main" tabindex="-1"><p class="muted pad">Laddar …</p></main>
+    <nav class="tabs no-print" aria-label="Huvudmeny">
+      <a href="#/" data-route="timer">Timer</a>
+      <a href="#/historik" data-route="historik">Historik</a>
+      <a href="#/projekt" data-route="projekt">Projekt</a>
+      <a href="#/underlag" data-route="underlag">Underlag</a>
+      <a href="#/installningar" data-route="installningar">Inställningar</a>
+    </nav>
+  </div>
+  <div id="toast" class="toast no-print" role="status" aria-live="polite"></div>
+  <noscript><p class="pad">Konsulttimer kräver JavaScript.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "konsulttimer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Konsulttimer – tidregistrering per projekt och kundunderlag. Lokal PWA utan server.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npm run build && node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test \"tests/unit/*.test.mjs\"",
+    "test:e2e": "npm run build && playwright test",
+    "verify": "npm run check && npm test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "fake-indexeddb": "^6.2.5"
+  }
+}
